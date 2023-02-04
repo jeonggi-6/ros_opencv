@@ -1,0 +1,15 @@
+<launch>
+    <!-- <group ns="jeonggi"> -->
+        <!-- <env name="ROS_MASTER_URI" value="http://192.168.0.4:11311" />
+        <env name="ROS_HOSTNAME" value="192.168.0.3" /> -->
+
+
+        <include file="$(find realsense2_camera)/launch/rs_camera.launch" ns="jeonggi"/>
+
+        <node name="sub_pub_image" pkg="ros_opencv" type="sub_pub_image" output="screen" >
+            <env name="ROS_MASTER_URI" value="http://192.168.0.4:11311" />
+            <env name="ROS_HOSTNAME" value="192.168.0.3" />
+        </node>
+
+    <!-- </group> -->
+</launch>
