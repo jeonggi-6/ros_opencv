@@ -4,8 +4,8 @@
 #include <ros/ros.h>
 #include <sensor_msgs/Image.h>
 #include <cv_bridge/cv_bridge.h>
-#include "opencv2/core/mat.hpp"
-#include "opencv2/imgproc.hpp"
+// #include "opencv2/core/mat.hpp"
+// #include "opencv2/imgproc.hpp"
 #include "opencv2/highgui.hpp"
 
 class D435_Image

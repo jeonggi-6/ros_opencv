@@ -5,7 +5,6 @@ find_package(catkin REQUIRED COMPONENTS
   cv_bridge
   roscpp
   sensor_msgs
-  std_msgs
 )
 
 find_package(OpenCV REQUIRED)
@@ -13,7 +12,7 @@ find_package(OpenCV REQUIRED)
 catkin_package(
   # INCLUDE_DIRS include
   #LIBRARIES ros_opencv
-  CATKIN_DEPENDS cv_bridge roscpp sensor_msgs std_msgs
+  CATKIN_DEPENDS cv_bridge roscpp sensor_msgs
 #  DEPENDS system_lib
 )
 
